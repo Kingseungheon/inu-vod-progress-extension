@@ -12,6 +12,10 @@
 - 진도율이 낮은 강좌부터 정렬
 - 진도율 새로고침 및 강좌 페이지 바로가기
 
+## 개인정보 보호
+
+강좌명과 출석 상태는 진도율을 계산하기 위해 사용자의 브라우저 안에서만 처리됩니다. 개발자나 외부 서버로 전송하거나 저장하지 않습니다. 자세한 내용은 [개인정보처리방침](PRIVACY.md)을 참고하세요.
+
 ## 직접 설치
 
 1. GitHub 저장소에서 `Code` → `Download ZIP`을 선택합니다.
@@ -42,7 +46,7 @@ git push -u origin main
 이 폴더 안에서 다음 명령을 실행하면 `manifest.json`이 ZIP 최상위에 포함된 배포 파일을 만들 수 있습니다.
 
 ```powershell
-Compress-Archive -Path manifest.json,content.js,README.md -DestinationPath inu-vod-progress-extension-v1.0.0.zip
+Compress-Archive -Path manifest.json,content.js,README.md,PRIVACY.md,icons -DestinationPath inu-vod-progress-extension-v1.0.1.zip
 ```
 
 완성된 ZIP 파일은 GitHub 저장소의 `Releases` → `Create a new release`에서 첨부할 수 있습니다.
