@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "INU 사이버캠퍼스 진도율 표시",
+  "version": "1.0.0",
+  "description": "인천대학교 사이버캠퍼스에서 강좌별 동영상 진도율을 퍼센트로 표시합니다.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://cyber.inu.ac.kr/",
+        "https://cyber.inu.ac.kr/index.php*",
+        "https://cyber.inu.ac.kr/my/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
